@@ -46,11 +46,11 @@ dependencies:
       dependencies:
         default:
           - source: .*
-            target: bct-2.6.10-upgrade
+            target: main
       dependant:
         default:
           - source: .*
-            target: main
+            target: bct-2.6.10-upgrade
 
   - project: kiegroup/optaweb-employee-rostering
     dependencies:
