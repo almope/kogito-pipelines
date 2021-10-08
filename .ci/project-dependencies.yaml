@@ -39,8 +39,8 @@ dependencies:
             target: bct-2.6.10-upgrade
 
   - project: kiegroup/kogito-examples
-    #dependencies:
-    #  - project: kiegroup/kogito-runtimes
+    dependencies:
+      - project: kiegroup/kogito-runtimes
     #  - project: kiegroup/optaplanner
     mapping:
       dependencies:
