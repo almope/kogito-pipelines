@@ -45,10 +45,10 @@ build:
         mvn -f kogito-examples-persistence/pom.xml clean install -Ppersistence ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
         mvn -f kogito-examples-events/pom.xml clean install -Pevents ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_CURRENT }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS }}
       upstream: mvn -e clean install -Dquickly ${{ env.BUILD_MVN_OPTS }} ${{ env.BUILD_MVN_OPTS_UPSTREAM }} ${{ env.KOGITO_EXAMPLES_BUILD_MVN_OPTS_UPSTREAM }}
-    #clone:
-    #  - kogito-examples
-    #  - kogito-examples-persistence
-    #  - kogito-examples-events
+    clone:
+      - kogito-examples
+      - kogito-examples-persistence
+      - kogito-examples-events
   
   - project: kiegroup/optaweb-employee-rostering
     build-command: 
