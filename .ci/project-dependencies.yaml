@@ -10,9 +10,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/kogito-examples
-        - kiegroup/kogito-apps
   
   - project: kiegroup/optaplanner
     dependencies:
@@ -26,10 +23,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
-        - kiegroup/optaplanner-quickstarts
 
   - project: kiegroup/kogito-apps
     dependencies:
@@ -44,9 +37,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/kogito-examples
-        - kiegroup/kogito-runtimes
 
   - project: kiegroup/kogito-examples
     dependencies:
@@ -74,10 +64,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/optaplanner  
-        - kiegroup/optaweb-vehicle-routing
-        - kiegroup/optaplanner-quickstarts
 
   - project: kiegroup/optaweb-vehicle-routing
     dependencies:
@@ -91,10 +77,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/optaplanner
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaplanner-quickstarts
 
   - project: kiegroup/optaplanner-quickstarts
     dependencies:
