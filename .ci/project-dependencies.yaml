@@ -8,8 +8,8 @@ dependencies:
             target: bct-2.6.10-upgrade
       dependant:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1-7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       exclude:
         - kiegroup/kogito-examples
         - kiegroup/kogito-apps
