@@ -45,12 +45,12 @@ dependencies:
     mapping:
       dependencies:
         default:
-          - source: bct-2.6.10-upgrade-stable
+          - source: .*
             target: main
       dependant:
         default:
           - source: .*
-            target: bct-2.6.10-upgrade
+            target: main
 
   - project: kiegroup/optaweb-employee-rostering
     dependencies:
