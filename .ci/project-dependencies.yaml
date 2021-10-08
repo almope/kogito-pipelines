@@ -61,9 +61,6 @@ dependencies:
         default:
           - source: .*
             target: bct-2.6.10-upgrade
-      exclude:
-        - kiegroup/kogito-apps
-        - kiegroup/kogito-runtimes
 
   - project: kiegroup/optaweb-employee-rostering
     dependencies:
