@@ -4,8 +4,8 @@ dependencies:
     mapping:
       dependencies:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1+7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       dependant:
         default:
           - source: (\d*)\.(.*)\.(.*)
@@ -38,12 +38,12 @@ dependencies:
     mapping:
       dependencies:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1+7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       dependant:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1-7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       exclude:
         - kiegroup/kogito-examples
         - kiegroup/kogito-runtimes
@@ -55,12 +55,12 @@ dependencies:
     mapping:
       dependencies:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1+7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       dependant:
         default:
-          - source: (\d*)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1-7}.${n2}.${n3}`)"
+          - source: .*
+            target: bct-2.6.10-upgrade
       exclude:
         - kiegroup/kogito-apps
         - kiegroup/kogito-runtimes
@@ -108,13 +108,9 @@ dependencies:
           - source: development
             target: main
         kiegroup/kogito-runtimes:
-          - source: (8)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1-7}.${n2}.${n3}`)"
-          - source: development
-            target: main
+          - source: .*
+            target: bct-2.6.10-upgrade
       dependant:
         default:
-          - source: (1)\.(.*)\.(.*)
-            targetExpression: "process.env.GITHUB_BASE_REF.replace(/(\\d*)\\.(.*)\\.(.*)/g, (m, n1, n2, n3) => `${+n1+7}.${n2}.${n3}`)"
-          - source: main
-            target: development
+          - source: .*
+            target: bct-2.6.10-upgrade
