@@ -45,7 +45,7 @@ dependencies:
     mapping:
       dependencies:
         default:
-          - source: .*
+          - source: bct-2.6.10-upgrade-stable
             target: main
       dependant:
         default:
